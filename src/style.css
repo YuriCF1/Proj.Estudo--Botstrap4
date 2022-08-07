@@ -12,6 +12,7 @@
 
 .font-titulo {
     font-family: 'Pacifico', cursive;
+    color: darkred;
 
 }
 
@@ -24,6 +25,12 @@
     background-color: darkred;
     color: white;
     
+}
+
+.botao-cor--especial:hover {
+    color: #222222;
+    background-color: white;
+    border-color: darkred;
 }
 
 .borda-cor--especial { 

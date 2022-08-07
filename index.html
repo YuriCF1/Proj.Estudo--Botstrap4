@@ -26,9 +26,9 @@
     <header>
       <!-- Parte 1 __NavBar -->
       <!-- <nav class="navbar navbar-expand-lg bg-light fixed-top"> -->
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Fruta & Fruto</a>
+            <a class="navbar-brand font-titulo" href="#">Fruta & Fruto</a>
             <!-- Esse button é o menu Hamburguer -->
             <button
             class="navbar-toggler"
@@ -53,7 +53,7 @@
               <a class="nav-link" href="#">Quem somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contato-modal">Contato</a>
             </li>
           </ul>
         </div>
@@ -181,7 +181,79 @@
       </section>
     </main>
     
+    <!-- MODAL -->
+    <!-- Button trigger modal -->
+      <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+      </button> -->
+
+      <!-- Modal -->
+      <div class="modal fade" id="contato-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <dialog class="modal-content">
+            <header class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Entre em contato</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </header>
+            <main class="modal-body">
+              <!-- FORM -->
+              <form>
+                <div class="col mb-4">
+                    <label for="exampleInputEmail1" class="form-label">Nome completo</label>
+                    <input type="text" class="form-control" placeholder="Seu nome aqui" aria-label="First name">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Endereço de Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="nome@domínio.com">
+                  <div id="emailHelp" class="form-text">Nunca compartilharemos seu email com ninguém.</div>
+                </div>
+                <!-- Não preciso de senha aqui -->
+                <!-- <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div> -->
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Me mantenha informado</label>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escreve sua mensagem aqui..."></textarea>
+                </div>
+                <!-- <button type="submit" class="btn btn-primary">Enviar</button> -->
+              </form>
+              <!-- FORM -->
+            </main>
+            <footer class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-primary borda-cor--especial botao-cor--especial">Enviar</button>
+            </footer>
+          </dialog>
+        </div>
+      </div>
     
+      <!-- FORMULÁRIO -->
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
     <!-- <img
       src="src/img/receita-abacate.jpg"
       alt="tigela com salada de abacate, vista superior"
